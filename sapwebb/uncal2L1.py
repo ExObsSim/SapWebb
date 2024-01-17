@@ -98,7 +98,7 @@ def run(in_file, out_file=None, num_ave=25):
     end = time.time()
     log.info('DarkCurrentStep Completed in {:.2f} s'.format(end-start))
     
-    # FlagSaturatedColumns from STScI JWST pipeline
+    # FlagSaturatedColumns custom step
     start = time.time()
     data = FlagSaturatedColumns(data, ncols=1)
     end = time.time()
